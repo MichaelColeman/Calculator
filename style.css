@@ -1,0 +1,41 @@
+:root {
+  margin: 0;
+}
+
+button {
+  box-shadow: 5px 5px 10px #74b2d5, -5px -5px 10px #9ef0ff;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #93e0ff, #7bbce2);
+  width: 44px;
+  height: 44px;
+  color: rgb(188, 245, 255);
+}
+
+button:active {
+  background: linear-gradient(145deg, #7bbce2, #93e0ff);
+}
+
+input[data='+'] {
+  color: green;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto 50px auto;
+  border-radius: 5%;
+  background-color: #89d1fb;
+  padding: 0.8rem;
+  width: 250px;
+}
+
+.calc-screen {
+  height: 500px;
+}
+
+.calcButtons {
+  grid-gap: 10px;
+  display: grid;
+  grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+}
