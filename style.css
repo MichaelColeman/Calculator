@@ -23,11 +23,10 @@
 .calc {
   display: grid;
   margin: auto;
-  box-shadow: inset 7px 7px 10px #87e670, inset -7px -7px 10px #2e5127;
+  box-shadow: inset 7px 7px 10px #87e670, inset -7px -7px 10px #559249;
   border-radius: 1rem;
   background-color: var(--main-color);
   padding: 0.6rem;
-  max-width: 550px;
   color: var(--text-color);
 }
 
