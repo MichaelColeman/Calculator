@@ -8,11 +8,20 @@
     <script src="./script.js" defer></script>
     <title>Calculator</title>
   </head>
-  <body>
+  <body class="main-content">
+    <header>
+      <div class="logoContainer">
+        <img class="logoImage" src="./img/icons8-pixel-cat-48.png" alt="Star shaped logo" />
+        <div class="logo">Calculator</div>
+      </div>
+    </header>
     <div class="calc">
-      <div class="calcScreen"></div>
-      <div class="calcButtons">
-        <button type="button" data="AC">AC</button>
+      <div class="calc-screen-container">
+        <div class="top-display">35 + 4 *</div>
+        <div class="bottom-display">25</div>
+      </div>
+      <div class="calc-btn-container">
+        <button type="button" data="C">C</button>
         <button type="button" data="/">/</button>
         <button type="button" data="*">*</button>
         <button type="button" data="-">-</button>
@@ -26,7 +35,19 @@
         <button type="button" data="1">1</button>
         <button type="button" data="2">2</button>
         <button type="button" data="3">3</button>
+        <button type="button" data="0">0</button>
+        <button type="button" data=".">.</button>
+        <button type="button" data="=">=</button>
       </div>
     </div>
+    <footer>
+      <p>Authored by Tom</p>
+      <a href="https://github.com/MichaelColeman">
+        <img class="icon" src="./img/icon-github-30.png" alt="github link" />
+      </a>
+      <a href="https://www.linkedin.com/in/michaelcolemancodes/">
+        <img class="icon" src="./img/icon-linkedin-circled-30.png" alt="linked-in link" />
+      </a>
+    </footer>
   </body>
 </html>
