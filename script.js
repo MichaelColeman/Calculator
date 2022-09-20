@@ -1,7 +1,7 @@
 const screen = document.querySelector('.bottom-screen');
 const topScreen = document.querySelector('.top-screen');
 
-const btnContainer = document.querySelector('.calc-btn-container');
+const btnContainer = document.querySelector('.btn-container');
 btnContainer.addEventListener('click', (e) => {
   console.log(e.target.value);
   calculator.handleButtonClick(e.target.value);
