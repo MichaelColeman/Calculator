@@ -2,16 +2,16 @@
 
 :root {
   --button-text-color: #030303a6;
-  --calc-screen-color: #0303037c;
   --main-text-color: #525a5a;
   --main-background-color: #f5fff2;
   --border-color: #c0dfd9;
-  --header-footer-color: rgb(255, 255, 255);
+  --header-footer-color: #ffffff;
   --calc-main-color: #52adac;
   --calc-light-shadow: #61cccb;
   --calc-dark-shadow: #438e8d;
+  --calc-screen-text-color: #00000083;
+  --calc-screen-bg-color: #092011ab;
   --border-radius: 16px;
-  padding: 0;
   font-size: 24px;
   font-family: 'Lobster', cursive;
 }
@@ -22,18 +22,19 @@ body {
   justify-content: space-between;
   margin: 0;
   background: var(--main-background-color);
+  padding: 0;
 }
 
 .calc {
   display: grid;
-  grid-template-rows: 1fr 2.5fr;
+  grid-template-rows: 1fr 3fr;
   margin: 10px auto auto auto;
   box-shadow: inset 7px 7px 10px var(--calc-light-shadow), inset -7px -7px 10px var(--calc-dark-shadow),
     3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(0, 0, 0, 0.2);
   border-radius: var(--border-radius);
   background-color: var(--calc-main-color);
   padding: 0.6rem;
-  max-width: 500px;
+  max-width: 400px;
   height: 600px;
 }
 
@@ -44,9 +45,9 @@ body {
   box-shadow: inset 2px 2px 10px #607677, inset -2px -2px 10px hsla(184, 39%, 25%, 0.377);
   border: solid 1px rgb(117, 117, 117);
   border-radius: var(--border-radius);
-  background: #06140b9c;
+  background: var(--calc-screen-bg-color);
   padding-right: 0.8rem;
-  color: #021403c2;
+  color: var(--calc-screen-text-color);
 }
 
 .bottom-screen {
@@ -55,7 +56,7 @@ body {
 
 .btn-container {
   display: grid;
-  grid: repeat(5, minmax(50px, 1fr)) / repeat(4, minmax(35px, 1fr));
+  grid: repeat(5, minmax(20px, 1fr)) / repeat(4, minmax(20px, 1fr));
   align-items: stretch;
   justify-items: stretch;
   gap: 15px;
@@ -107,7 +108,6 @@ button[value='*'] {
 
 .logo-container {
   display: flex;
-  align-content: center;
   align-items: stretch;
   gap: 10px;
 }
@@ -125,11 +125,12 @@ footer {
   background-color: var(--header-footer-color);
   padding: 5px;
   width: 100%;
+  height: 50px;
 }
 
 header {
+  justify-content: space-between;
   border-bottom: 5px solid var(--border-color);
-  border-radius: 0 0 10px 10px;
 }
 
 footer {
@@ -140,7 +141,16 @@ footer {
   gap: 20px;
   margin: auto 0 0 0;
   border-top: 5px solid var(--border-color);
-  border-radius: 10px 10px 0 0;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+header a:hover {
+  background-color: #525a5a;
 }
 
 footer p {
@@ -154,7 +164,7 @@ footer a {
   height: 30px;
 }
 
-@media screen and (max-width: 500px) {
+/* @media screen and (max-width: 500px) {
   .calc {
     margin-top: 0;
     border-radius: 0;
@@ -176,4 +186,4 @@ footer a {
   footer {
     display: none;
   }
-}
+} */
