@@ -14,6 +14,7 @@
 - There is a general lack of structure to the javascript code because no design patterns were used. There is also no error catching.
 - The html could have used more descriptive tags to help screen readers and SEO.
 - The css has multiple design patterns littered in. for example, some colors are saved in variables and some are not. Also, there is no structure to the way that css selectors are used. Some selectors are classes and others are html tags.
+- I did not use a css preprocessor. The layout has only been tested on Chromium browsers.
 
 ---
 
