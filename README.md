@@ -6,18 +6,17 @@
 
 ## [![Capture](https://user-images.githubusercontent.com/3175254/224551846-adad43d6-c659-442b-9d4e-58323257fbee.png)](https://michaelcoleman.github.io/Calculator/)
 
----
 
-## :arrow_down: _Update 3/1/23_ :arrow_down:
+### :arrow_down: _Update 3/1/23_ :arrow_down:
 
-## What did I learn?
+### What did I learn?
 
 - Manipulating the DOM with vanilla Javascript
 - CSS Flexbox
 - CSS Grid
 - State Management
 
-## What did I do wrong?
+### What did I do wrong?
 
 - The logic of the calculator itself has bugs.
 - There is a general lack of structure to the javascript code because no design patterns were used.
